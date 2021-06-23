@@ -2,16 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
-
+    public static UIController Instance { get; private set; }
     public Text wealthText;
-    public int currentWealth = 0;
+
+    public GameObject pauseScreen;
+    public GameObject settingsScreen;
+
+    void Awake()
+    {
+        Instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
-        UpdateWealth(0);
+        pauseScreen.SetActive(false);
+        settingsScreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -19,13 +28,30 @@ public class UIController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
-            UpdateWealth(1);
+            GameController.Instance.UpdateWealth(1);
         }
     }
 
-    public void UpdateWealth(int update)
+    public void LoadMenu()
     {
-        currentWealth += update;
-        wealthText.text = currentWealth.ToString();
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MainMenu");
+        Debug.Log("Loading menu...");
+    }
+
+    public void OpenSettings()
+    {
+        GameController.Instance.ToggleSettings();
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quitting game...");
+        Application.Quit();
+    }
+
+    public void Resume()
+    {
+        GameController.Instance.PauseGame();
     }
 }

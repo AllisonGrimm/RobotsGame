@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerAim : MonoBehaviour
 {
     private Transform aimTransform;
+    private bool isRight = true;
 
     private void Awake()
     {

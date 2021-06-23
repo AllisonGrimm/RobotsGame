@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2588573897555794974}
   - component: {fileID: 705255627118489203}
   - component: {fileID: 3170013259219695855}
-  - component: {fileID: 4306070071996769818}
   - component: {fileID: 101149702079692695}
   m_Layer: 0
   m_Name: EliteBase1
@@ -98,44 +97,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.506873, y: -0.2350471}
+  m_Offset: {x: 2.0381036, y: -0.9341376}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.6875, y: 2.34375}
+    oldSize: {x: 18.75, y: 9.375}
     newSize: {x: 4.6875, y: 2.34375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.083525, y: 0.10228491}
-  m_EdgeRadius: 0
---- !u!61 &4306070071996769818
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2640076461191088594}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.2711314, y: 0.78004396}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.6875, y: 2.34375}
-    newSize: {x: 4.6875, y: 2.34375}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.4966178, y: 0.076195955}
+  m_Size: {x: 12.281238, y: 0.40276384}
   m_EdgeRadius: 0
 --- !u!68 &101149702079692695
 EdgeCollider2D:
@@ -153,8 +126,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -1.4334376, y: -0.82270443}
-  - {x: -1.0375006, y: -0.67390215}
+  - {x: -5.7532067, y: -3.3178291}
+  - {x: -4.1272492, y: -2.727564}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

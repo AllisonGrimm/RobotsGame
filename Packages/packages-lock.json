@@ -73,7 +73,7 @@
       "dependencies": {}
     },
     "com.unity.collab-proxy": {
-      "version": "1.3.8",
+      "version": "1.3.9",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
@@ -81,7 +81,7 @@
     },
     "com.unity.ext.nunit": {
       "version": "1.0.0",
-      "depth": 1,
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"

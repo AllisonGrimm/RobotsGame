@@ -13,7 +13,6 @@ public class HealthController : MonoBehaviour
 	{
 		slider.maxValue = health;
 		slider.value = health;
-
 	}
 
 	public void SetHealth(int health)
